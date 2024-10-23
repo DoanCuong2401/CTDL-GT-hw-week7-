@@ -8,7 +8,7 @@ typedef struct {
 
 int main() {
     Population a;
-    int n = 3;
+    int n = 51;
     int number;
     int check = 0;
     a.year = (int*)malloc(sizeof(int) * n); // Cấp phát động cho mảng năm
