@@ -8,8 +8,9 @@ typedef struct {
 
 int main() {
     Population a;
-    int n = 51;
+    int n = 3;
     int number;
+    int check = 0;
     a.year = (int*)malloc(sizeof(int) * n); // Cấp phát động cho mảng năm
     a.number = (int*)malloc(sizeof(int) * n); // Cấp phát động cho mảng số lượng
 
@@ -30,6 +31,10 @@ int main() {
 
     printf("\nCac nam co so luong nguoi sinh bang %d:\n", number);
     for (int i = 0; i < n; i++) {
+        if (a.number[i] != number) {
+            printf("Khong co nam nao thoa man");
+            break;
+        }
         if (a.number[i] == number) {
             printf("%d ", a.year[i]);
         }
