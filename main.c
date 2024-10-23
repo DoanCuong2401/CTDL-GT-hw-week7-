@@ -6,12 +6,6 @@ typedef struct {
     int *number;
 } Population;
 
-void swap(int *a, int *b) { // Hoán đổi vị trí 2 phần tử
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
 int main() {
     Population a;
     int n = 51;
